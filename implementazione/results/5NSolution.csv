@@ -1,0 +1,44 @@
+
+(1) 1-tree: (1, 3)   (1, 4)   (2, 3)   (3, 5)   (4, 5)    Costo=14
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(5)--(4)--(1)
+(2) EO:[(1,3)] E1:[]
+(3) EO:[(3,5)] E1:[(1,3)]
+(4) EO:[(5,4)] E1:[(1,3)(3,5)]
+(5) EO:[(4,1)] E1:[(1,3)(3,5)(5,4)]
+CALCOLO DEI NUOVI GRAFI
+
+(2) Ciclo hamiltoniano: (1)--5--(2)--6--(3)--2--(5)--1--(4)--3--(1) Costo=17
+POSSIBILE SOLUZIONE
+
+(3) 1-tree: (1, 3)   (1, 4)   (2, 3)   (2, 4)   (4, 5)    Costo=19
+CHIUSO PER BOUND
+
+(4) 1-tree: (1, 3)   (1, 4)   (2, 3)   (2, 4)   (3, 5)    Costo=20
+CHIUSO PER BOUND
+
+(5) 1-tree: (1, 2)   (1, 3)   (2, 3)   (3, 5)   (4, 5)    Costo=16
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(3)--(1)
+(6) EO:[(4,1)(1,2)] E1:[(1,3)(3,5)(5,4)]
+(7) EO:[(4,1)(2,3)] E1:[(1,3)(3,5)(5,4)(1,2)]
+CALCOLO DEI NUOVI GRAFI
+
+(7) Ciclo hamiltoniano: (1)--5--(2)--7--(4)--1--(5)--2--(3)--2--(1) Costo=17
+POSSIBILE SOLUZIONE
+
+(6) 1-tree: (1, 3)   (1, 5)   (2, 3)   (3, 5)   (4, 5)    Costo=19
+CHIUSO PER BOUND
+
+Sono state trovate 2 soluzioni migliori con costo 17 e percorso
+(1)--5--(2)--6--(3)--2--(5)--1--(4)--3--(1)
+(1)--5--(2)--7--(4)--1--(5)--2--(3)--2--(1)
+
+
+ Durante la ricerca sono stati creati:
+ (2) Nodi intermedi per la generazione di Branchess;
+ (2) Nodi chiusi per possibile soluzione;
+ (3) Nodi chiusi per Bound;
+ (0) Nodi chiusi per Unfeasibility.
+
+Tempo complessivo di esecuzione: 27 millisecondi

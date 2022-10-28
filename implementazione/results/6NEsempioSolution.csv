@@ -1,0 +1,306 @@
+
+(1) 1-tree: (1, 3)   (1, 6)   (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=24
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(6)--(1)
+(2) EO:[(1,3)] E1:[]
+(3) EO:[(3,6)] E1:[(1,3)]
+(4) EO:[(6,1)] E1:[(1,3)(3,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(2) 1-tree: (1, 2)   (1, 6)   (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=25
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(6)--(1)
+(5) EO:[(1,3)(1,2)] E1:[]
+(6) EO:[(1,3)(2,6)] E1:[(1,2)]
+(7) EO:[(1,3)(6,1)] E1:[(1,2)(2,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(3) 1-tree: (1, 3)   (1, 6)   (2, 3)   (2, 6)   (4, 5)   (4, 6)    Costo=25
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(2)--(6)--(1)
+(8) EO:[(3,6)(3,2)] E1:[(1,3)]
+(9) EO:[(3,6)(2,6)] E1:[(1,3)(3,2)]
+(10) EO:[(3,6)(6,1)] E1:[(1,3)(3,2)(2,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(4) 1-tree: (1, 2)   (1, 3)   (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=25
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(6)--(3)--(1)
+(11) EO:[(6,1)(1,2)] E1:[(1,3)(3,6)]
+(12) EO:[(6,1)(2,6)] E1:[(1,3)(3,6)(1,2)]
+CALCOLO DEI NUOVI GRAFI
+
+(5) 1-tree: (1, 4)   (1, 6)   (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=26
+PROCEDURA DI BRANCING
+sottociclo: (1)--(4)--(6)--(1)
+(13) EO:[(1,3)(1,2)(1,4)] E1:[]
+(14) EO:[(1,3)(1,2)(4,6)] E1:[(1,4)]
+(15) EO:[(1,3)(1,2)(6,1)] E1:[(1,4)(4,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(6) 1-tree: (1, 2)   (1, 6)   (2, 4)   (3, 6)   (4, 5)   (4, 6)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(4)--(6)--(1)
+(16) EO:[(1,3)(2,6)(2,4)] E1:[(1,2)]
+(17) EO:[(1,3)(2,6)(4,6)] E1:[(1,2)(2,4)]
+(18) EO:[(1,3)(2,6)(6,1)] E1:[(1,2)(2,4)(4,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(7) 1-tree: (1, 2)   (1, 4)   (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(6)--(4)--(1)
+(19) EO:[(1,3)(6,1)(6,4)] E1:[(1,2)(2,6)]
+(20) EO:[(1,3)(6,1)(4,1)] E1:[(1,2)(2,6)(6,4)]
+CALCOLO DEI NUOVI GRAFI
+
+(8) 1-tree: (1, 3)   (1, 6)   (2, 6)   (3, 4)   (4, 5)   (4, 6)    Costo=26
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(4)--(6)--(1)
+(21) EO:[(3,6)(3,2)(3,4)] E1:[(1,3)]
+(22) EO:[(3,6)(3,2)(4,6)] E1:[(1,3)(3,4)]
+(23) EO:[(3,6)(3,2)(6,1)] E1:[(1,3)(3,4)(4,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(9) 1-tree: (1, 3)   (1, 6)   (2, 3)   (2, 4)   (4, 5)   (4, 6)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(2)--(4)--(6)--(1)
+(24) EO:[(3,6)(2,6)(2,4)] E1:[(1,3)(3,2)]
+(25) EO:[(3,6)(2,6)(4,6)] E1:[(1,3)(3,2)(2,4)]
+(26) EO:[(3,6)(2,6)(6,1)] E1:[(1,3)(3,2)(2,4)(4,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(24) Ciclo hamiltoniano: (1)--6--(3)--7--(2)--6--(5)--3--(4)--2--(6)--6--(1) Costo=30
+POSSIBILE SOLUZIONE
+
+(25) Ciclo hamiltoniano: (1)--6--(3)--7--(2)--3--(4)--3--(5)--5--(6)--6--(1) Costo=30
+POSSIBILE SOLUZIONE
+
+(10) 1-tree: (1, 2)   (1, 3)   (2, 3)   (2, 6)   (4, 5)   (4, 6)    Costo=26
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(3)--(1)
+(27) EO:[(3,6)(6,1)(1,2)] E1:[(1,3)(3,2)(2,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(11) 1-tree: (1, 3)   (1, 4)   (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=26
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(6)--(4)--(1)
+(28) EO:[(6,1)(1,2)(6,4)] E1:[(1,3)(3,6)]
+(29) EO:[(6,1)(1,2)(4,1)] E1:[(1,3)(3,6)(6,4)]
+CALCOLO DEI NUOVI GRAFI
+
+(12) 1-tree: (1, 2)   (1, 3)   (2, 4)   (3, 6)   (4, 5)   (4, 6)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(4)--(6)--(3)--(1)
+(30) EO:[(6,1)(2,6)(2,4)] E1:[(1,3)(3,6)(1,2)]
+(31) EO:[(6,1)(2,6)(4,6)] E1:[(1,3)(3,6)(1,2)(2,4)]
+CALCOLO DEI NUOVI GRAFI
+
+(30) Ciclo hamiltoniano: (1)--7--(2)--6--(5)--3--(4)--2--(6)--6--(3)--6--(1) Costo=30
+POSSIBILE SOLUZIONE
+
+(31) Ciclo hamiltoniano: (1)--7--(2)--3--(4)--3--(5)--5--(6)--6--(3)--6--(1) Costo=30
+POSSIBILE SOLUZIONE
+
+(13) 1-tree: (1, 5)   (1, 6)   (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(5)--(4)--(6)--(1)
+(32) EO:[(1,3)(1,2)(1,4)(1,5)] E1:[]
+(33) EO:[(1,3)(1,2)(1,4)(5,4)] E1:[(1,5)]
+(34) EO:[(1,3)(1,2)(1,4)(4,6)] E1:[(1,5)(5,4)]
+(35) EO:[(1,3)(1,2)(1,4)(6,1)] E1:[(1,5)(5,4)(4,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(14) 1-tree: (1, 4)   (1, 6)   (2, 4)   (2, 6)   (3, 6)   (4, 5)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(4)--(2)--(6)--(1)
+(36) EO:[(1,3)(1,2)(4,6)(4,2)] E1:[(1,4)]
+(37) EO:[(1,3)(1,2)(4,6)(2,6)] E1:[(1,4)(4,2)]
+(38) EO:[(1,3)(1,2)(4,6)(6,1)] E1:[(1,4)(4,2)(2,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(15) 1-tree: (1, 4)   (1, 5)   (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=29
+PROCEDURA DI BRANCING
+sottociclo: (1)--(4)--(5)--(1)
+(39) EO:[(1,3)(1,2)(6,1)(4,5)] E1:[(1,4)(4,6)]
+(40) EO:[(1,3)(1,2)(6,1)(5,1)] E1:[(1,4)(4,6)(4,5)]
+CALCOLO DEI NUOVI GRAFI
+
+(16) 1-tree: (1, 2)   (1, 6)   (2, 5)   (3, 6)   (4, 5)   (4, 6)    Costo=30
+CHIUSO PER BOUND
+
+(17) 1-tree: (1, 2)   (1, 6)   (2, 4)   (3, 6)   (4, 5)   (5, 6)    Costo=30
+CHIUSO PER BOUND
+
+(18) 1-tree: (1, 2)   (1, 4)   (2, 4)   (3, 6)   (4, 5)   (4, 6)    Costo=29
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(4)--(1)
+(41) EO:[(1,3)(2,6)(6,1)(4,1)] E1:[(1,2)(2,4)(4,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(19) 1-tree: (1, 2)   (1, 4)   (2, 4)   (2, 6)   (3, 6)   (4, 5)    Costo=28
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(4)--(1)
+(42) EO:[(1,3)(6,1)(6,4)(2,4)] E1:[(1,2)(2,6)]
+(43) EO:[(1,3)(6,1)(6,4)(4,1)] E1:[(1,2)(2,6)(2,4)]
+CALCOLO DEI NUOVI GRAFI
+
+(20) 1-tree: (1, 2)   (1, 5)   (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=28
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(6)--(4)--(5)--(1)
+(44) EO:[(1,3)(6,1)(4,1)(4,5)] E1:[(1,2)(2,6)(6,4)]
+(45) EO:[(1,3)(6,1)(4,1)(5,1)] E1:[(1,2)(2,6)(6,4)(4,5)]
+CALCOLO DEI NUOVI GRAFI
+
+(21) 1-tree: (1, 3)   (1, 6)   (2, 6)   (3, 5)   (4, 5)   (4, 6)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(5)--(4)--(6)--(1)
+(46) EO:[(3,6)(3,2)(3,4)(3,5)] E1:[(1,3)]
+(47) EO:[(3,6)(3,2)(3,4)(5,4)] E1:[(1,3)(3,5)]
+(48) EO:[(3,6)(3,2)(3,4)(4,6)] E1:[(1,3)(3,5)(5,4)]
+(49) EO:[(3,6)(3,2)(3,4)(6,1)] E1:[(1,3)(3,5)(5,4)(4,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(48) Ciclo hamiltoniano: (1)--6--(3)--9--(5)--3--(4)--3--(2)--1--(6)--6--(1) Costo=28
+POSSIBILE SOLUZIONE
+
+(49) Ciclo hamiltoniano: (1)--7--(2)--1--(6)--2--(4)--3--(5)--9--(3)--6--(1) Costo=28
+POSSIBILE SOLUZIONE
+
+(22) 1-tree: (1, 3)   (1, 6)   (2, 4)   (2, 6)   (3, 4)   (4, 5)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(4)--(2)--(6)--(1)
+(50) EO:[(3,6)(3,2)(4,6)(4,2)] E1:[(1,3)(3,4)]
+(51) EO:[(3,6)(3,2)(4,6)(2,6)] E1:[(1,3)(3,4)(4,2)]
+(52) EO:[(3,6)(3,2)(4,6)(6,1)] E1:[(1,3)(3,4)(4,2)(2,6)]
+CALCOLO DEI NUOVI GRAFI
+
+(23) 1-tree: (1, 2)   (1, 3)   (2, 6)   (3, 4)   (4, 5)   (4, 6)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(2)--(6)--(4)--(3)--(1)
+(53) EO:[(3,6)(3,2)(6,1)(1,2)] E1:[(1,3)(3,4)(4,6)]
+(54) EO:[(3,6)(3,2)(6,1)(2,6)] E1:[(1,3)(3,4)(4,6)(1,2)]
+CALCOLO DEI NUOVI GRAFI
+
+(26) 1-tree: (1, 2)   (1, 3)   (2, 3)   (2, 4)   (4, 5)   (4, 6)    Costo=28
+CHIUSO PER BOUND
+
+(27) 1-tree: (1, 3)   (1, 4)   (2, 3)   (2, 6)   (4, 5)   (4, 6)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(2)--(6)--(4)--(1)
+(55) EO:[(3,6)(6,1)(1,2)(6,4)] E1:[(1,3)(3,2)(2,6)]
+(56) EO:[(3,6)(6,1)(1,2)(4,1)] E1:[(1,3)(3,2)(2,6)(6,4)]
+CALCOLO DEI NUOVI GRAFI
+
+(56) Ciclo hamiltoniano: (1)--6--(3)--7--(2)--1--(6)--2--(4)--3--(5)--9--(1) Costo=28
+POSSIBILE SOLUZIONE
+
+(28) 1-tree: (1, 3)   (1, 4)   (2, 4)   (2, 6)   (3, 6)   (4, 5)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(6)--(2)--(4)--(1)
+(57) EO:[(6,1)(1,2)(6,4)(6,2)] E1:[(1,3)(3,6)]
+(58) EO:[(6,1)(1,2)(6,4)(2,4)] E1:[(1,3)(3,6)(6,2)]
+(59) EO:[(6,1)(1,2)(6,4)(4,1)] E1:[(1,3)(3,6)(6,2)(2,4)]
+CALCOLO DEI NUOVI GRAFI
+
+(59) Ciclo hamiltoniano: (1)--6--(3)--6--(6)--1--(2)--3--(4)--3--(5)--9--(1) Costo=28
+POSSIBILE SOLUZIONE
+
+(29) 1-tree: (1, 3)   (1, 5)   (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=27
+PROCEDURA DI BRANCING
+sottociclo: (1)--(3)--(6)--(4)--(5)--(1)
+(60) EO:[(6,1)(1,2)(4,1)(4,5)] E1:[(1,3)(3,6)(6,4)]
+(61) EO:[(6,1)(1,2)(4,1)(5,1)] E1:[(1,3)(3,6)(6,4)(4,5)]
+CALCOLO DEI NUOVI GRAFI
+
+(32) 1-tree: (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=12
+CHIUSO PER UNFEASIBILITY
+
+(33) 1-tree: (1, 5)   (1, 6)   (2, 6)   (3, 6)   (4, 6)   (5, 6)    Costo=29
+CHIUSO PER BOUND
+
+(34) 1-tree: (1, 5)   (1, 6)   (2, 4)   (2, 6)   (3, 6)   (4, 5)    Costo=28
+CHIUSO PER BOUND
+
+(35) 1-tree: (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=12
+CHIUSO PER UNFEASIBILITY
+
+(36) 1-tree: (1, 4)   (1, 6)   (2, 6)   (3, 6)   (4, 5)   (5, 6)    Costo=29
+CHIUSO PER BOUND
+
+(37) 1-tree: (1, 4)   (1, 6)   (2, 4)   (3, 6)   (4, 5)   (5, 6)    Costo=31
+CHIUSO PER BOUND
+
+(38) 1-tree: (1, 4)   (1, 5)   (2, 4)   (2, 6)   (3, 6)   (4, 5)    Costo=30
+CHIUSO PER BOUND
+
+(39) 1-tree: (1, 4)   (1, 5)   (2, 6)   (3, 6)   (4, 6)   (5, 6)    Costo=31
+CHIUSO PER BOUND
+
+(40) 1-tree: (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=12
+CHIUSO PER UNFEASIBILITY
+
+(41) 1-tree: (1, 2)   (1, 5)   (2, 4)   (3, 6)   (4, 5)   (4, 6)    Costo=30
+CHIUSO PER BOUND
+
+(42) 1-tree: (1, 2)   (1, 4)   (2, 6)   (3, 6)   (4, 5)   (5, 6)    Costo=30
+CHIUSO PER BOUND
+
+(43) 1-tree: (1, 2)   (1, 5)   (2, 4)   (2, 6)   (3, 6)   (4, 5)    Costo=29
+CHIUSO PER BOUND
+
+(44) 1-tree: (1, 2)   (1, 5)   (2, 6)   (3, 6)   (4, 6)   (5, 6)    Costo=30
+CHIUSO PER BOUND
+
+(45) 1-tree: (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=12
+CHIUSO PER UNFEASIBILITY
+
+(46) 1-tree: (2, 6)   (4, 5)   (4, 6)    Costo=6
+CHIUSO PER UNFEASIBILITY
+
+(47) 1-tree: (1, 3)   (1, 6)   (2, 6)   (3, 5)   (4, 6)   (5, 6)    Costo=29
+CHIUSO PER BOUND
+
+(50) 1-tree: (1, 3)   (1, 6)   (2, 6)   (3, 4)   (4, 5)   (5, 6)    Costo=29
+CHIUSO PER BOUND
+
+(51) 1-tree: (1, 3)   (1, 6)   (2, 4)   (3, 4)   (4, 5)   (5, 6)    Costo=31
+CHIUSO PER BOUND
+
+(52) 1-tree: (1, 2)   (1, 3)   (2, 4)   (2, 6)   (3, 4)   (4, 5)    Costo=28
+CHIUSO PER BOUND
+
+(53) 1-tree: (1, 3)   (1, 4)   (2, 6)   (3, 4)   (4, 5)   (4, 6)    Costo=28
+CHIUSO PER BOUND
+
+(54) 1-tree: (1, 2)   (1, 3)   (2, 4)   (3, 4)   (4, 5)   (4, 6)    Costo=29
+CHIUSO PER BOUND
+
+(55) 1-tree: (1, 3)   (1, 4)   (2, 3)   (2, 4)   (2, 6)   (4, 5)    Costo=28
+CHIUSO PER BOUND
+
+(57) 1-tree: (1, 3)   (1, 4)   (2, 4)   (3, 6)   (4, 5)   (5, 6)    Costo=31
+CHIUSO PER BOUND
+
+(58) 1-tree: (1, 3)   (1, 4)   (2, 6)   (3, 6)   (4, 5)   (5, 6)    Costo=29
+CHIUSO PER BOUND
+
+(60) 1-tree: (1, 3)   (1, 5)   (2, 6)   (3, 6)   (4, 6)   (5, 6)    Costo=29
+CHIUSO PER BOUND
+
+(61) 1-tree: (2, 6)   (3, 6)   (4, 5)   (4, 6)    Costo=12
+CHIUSO PER UNFEASIBILITY
+
+Sono state trovate 4 soluzioni migliori con costo 28 e percorso
+(1)--6--(3)--9--(5)--3--(4)--3--(2)--1--(6)--6--(1)
+(1)--7--(2)--1--(6)--2--(4)--3--(5)--9--(3)--6--(1)
+(1)--6--(3)--7--(2)--1--(6)--2--(4)--3--(5)--9--(1)
+(1)--6--(3)--6--(6)--1--(2)--3--(4)--3--(5)--9--(1)
+
+
+ Durante la ricerca sono stati creati:
+ (24) Nodi intermedi per la generazione di Branchess;
+ (8) Nodi chiusi per possibile soluzione;
+ (23) Nodi chiusi per Bound;
+ (6) Nodi chiusi per Unfeasibility.
+
+Tempo complessivo di esecuzione: 43 millisecondi
